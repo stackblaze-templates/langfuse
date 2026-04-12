@@ -1,4 +1,4 @@
-# Langfuse [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/langfuse/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/langfuse)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
+# Langfuse [![Version](https://img.shields.io/badge/version-3-000000)](https://github.com/stackblaze-templates/langfuse) [![Maintained by StackBlaze](https://img.shields.io/badge/maintained%20by-StackBlaze-blue)](https://stackblaze.com) [![Weekly Updates](https://img.shields.io/badge/updates-weekly-green)](https://github.com/stackblaze-templates/langfuse/actions) [![License](https://img.shields.io/github/license/stackblaze-templates/langfuse)](LICENSE) [![Deploy on StackBlaze](https://img.shields.io/badge/Deploy%20on-StackBlaze-orange)](https://stackblaze.com)
 
 <p align="center"><img src="logo.png" alt="langfuse" width="120"></p>
 
