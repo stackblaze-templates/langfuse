@@ -8,11 +8,29 @@ LLM engineering platform for observability, metrics, evaluations, and prompt man
 
 ## Local Development
 
+Copy `.env.example` to `.env` and fill in your values, then run:
+
 ```bash
 docker compose up
 ```
 
+> ⚠️ **Warning**: The default fallback credentials in `docker-compose.yml` are for local development only. **Always set strong, unique values for `NEXTAUTH_SECRET`, `SALT`, and `POSTGRES_PASSWORD` before any production or internet-facing deployment.**
+
 See the project files for configuration details.
+
+## Security Configuration
+
+The following environment variables **must** be set to strong, unique values before production deployment:
+
+| Variable | Description | How to generate |
+|---|---|---|
+| `NEXTAUTH_SECRET` | Signs NextAuth.js session tokens | `openssl rand -base64 32` |
+| `SALT` | Salts password hashes | `openssl rand -base64 32` |
+| `NEXTAUTH_URL` | Public base URL of your Langfuse instance | Set to your actual domain |
+| `DATABASE_URL` | PostgreSQL connection string | Use a strong, unique password |
+| `ENCRYPTION_KEY` | (Optional) Encrypts sensitive data at rest | `openssl rand -hex 32` |
+
+> **Never commit real secrets.** Copy `.env.example` to `.env` and add `.env` to `.gitignore` (already included in this repo).
 
 ## Deploy on StackBlaze
 
