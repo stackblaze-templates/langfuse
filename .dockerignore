@@ -1,0 +1,8 @@
+.env
+.env.*
+.git
+.gitignore
+*.pem
+*.key
+*.crt
+node_modules
